@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" http-equiv="Content-Type">
+
+		<title></title>
+
+		<!-- SEO TAGS [keywords, description, owner, location, etc...] -->
+		<link rel="stylesheet" href="kite.min.css">
+	</head>
+
+	<body>
+
+		<p style="position: relative; float: left; clear: left">
+			Kite simple (Tooltip)
+			<em data-template="kite-simple" class="kite" data-valign="bottom">
+				<b class="kite-inner">{_kiteString_}</b>
+			</em>
+		</p>
+
+		<section style="position: relative;  float: left; clear: left">
+			Kite selectable (Pop-over)
+			<span data-template="kite-selectable" class="kite" data-valign="bottom">
+				<menu class="kite-inner">
+					<a href="#" title="{_kiteString1_}" class="kite-item">{_kiteString1_}</a>
+					<a href="#" title="{_kiteString2_}" class="kite-item">{_kiteString2_}</a>
+					<a href="#" title="{_kiteString3_}" class="kite-item">{_kiteString3_}</a>
+				</menu>
+			</span>
+		</section>
+
+	</body>
+</html>

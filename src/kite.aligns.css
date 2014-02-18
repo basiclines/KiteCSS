@@ -6,7 +6,6 @@
 
 /* Vertical align bottom */
 .kite[data-valign=bottom] {
-	position: absolute;
 	top: 100%;
 	bottom: auto;
 	padding-top: 8px;
@@ -36,3 +35,32 @@
 			border-top-color: transparent;
 			border-bottom-color: rgba(0, 0, 0, 0.2);
 		}
+
+
+/* Horitonzal align start */
+.kite[data-halign=start] {
+	text-align: left;
+	left: 8px;
+	margin: 0;
+}
+		.kite[data-halign=start]:before,
+		.kite[data-halign=start]:after {
+			right: auto;
+			left: 8px;
+			margin-left: 0;
+		}
+
+/* Horitonzal align end */
+.kite[data-halign=end] {
+	text-align: right;
+	left: auto;
+	right: 8px;
+	margin: 0;
+}
+		.kite[data-halign=end]:before,
+		.kite[data-halign=end]:after {
+			left: auto;
+			right: 8px;
+			margin-left: 0;
+		}
+

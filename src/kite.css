@@ -9,6 +9,7 @@
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
+	z-index: 5;
 	margin: 0 0 0 -100px;
 	padding-bottom: 8px;
 	width: 200px;
@@ -42,6 +43,7 @@
 		background: rgba(255, 255, 255, 0.95);
 		border-radius: 4px;
 		padding: 8px 12px;
+		margin: 0;
 	}
 		/* External border */
 		.kite-inner:before {
