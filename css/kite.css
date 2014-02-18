@@ -1,0 +1,118 @@
+/**
+* Kite CSS, tooltips & pop-over library based on pure CSS
+*
+* @version 1.0
+*/
+
+/* Positioning layout */
+.kite {
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin: 0 0 0 -100px;
+	padding-bottom: 8px;
+	width: 200px;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transform: translateY(7%);
+	transform: translateY(7%);
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+/* Hover magic */
+.kite_active,
+*:hover > .kite {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	pointer-events: auto;
+}
+
+
+	/* Visual layout */
+	.kite-inner {
+		position: relative;
+		display: inline-block; *display: inline; *zoom: 1;
+		font: 12px/1em Sans-serif;
+		color: #757575;
+		text-transform: none;
+		background: #fff;
+		background: rgba(255, 255, 255, 0.95);
+		border-radius: 4px;
+		padding: 8px 12px;
+	}
+		/* External border */
+		.kite-inner:before {
+			content: "";
+			position: absolute;
+			left: -1px;
+			top: -1px;
+			right: -1px;
+			bottom: -1px;
+			z-index: 3;
+			pointer-events: none;
+			border: solid 1px #ccc;
+			border: solid 1px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			pointer-events: none;
+		}
+
+
+	/* Pointer positioning and visual */
+	.kite:before,
+	.kite:after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin: -8px 0 0 -6px;
+		border: solid 6px transparent;
+	}
+
+	/* Pointer */
+	.kite:before {
+		border-top-color: #fff;
+		border-top-color: rgba(255, 255, 255, 0.95);
+		z-index: 5;
+	}
+	/* Pointer border */
+	.kite:after {
+		margin-top: -7px;
+		border-top-color: #ccc;
+		border-top-color: rgba(0, 0, 0, 0.2);
+		z-index: 4;
+	}
+
+
+	/* List items */
+	.kite-item {
+		border-bottom: solid 1px #ccc;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+		color: #333;
+		-webkit-text-stroke: 0.20px; /* partial font fix for webkit */
+		border-right: none;
+		border-left: none;
+		display: block;
+		padding: 9px 12px 7px;
+		margin: 0 -12px;
+		text-decoration: none;
+	}
+	.kite-item:first-child { margin-top: -8px; }
+	.kite-item:last-child { border: none; margin-bottom: -8px; }
+	.kite-item:hover {
+		text-decoration: none;
+		background-color: #f5f5f5;
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
+
+
+
+
+
+
+
+
+

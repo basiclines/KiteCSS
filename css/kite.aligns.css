@@ -1,0 +1,38 @@
+/**
+* Kite CSS, tooltips & pop-over library based on pure CSS
+*
+* @version 1.0
+*/
+
+/* Vertical align bottom */
+.kite[data-valign=bottom] {
+	position: absolute;
+	top: 100%;
+	bottom: auto;
+	padding-top: 8px;
+	padding-bottom: 0;
+	-webkit-transform: translateY(-7%);
+	transform: translateY(-7%);
+}
+.kite[data-valign=bottom].kite_active,
+*:hover > .kite[data-valign=bottom] {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+	.kite[data-valign=bottom]:before,
+	.kite[data-valign=bottom]:after {
+		margin-bottom: -8px;
+		margin-top: 0;
+		top: auto;
+		bottom: 100%;
+	}
+		.kite[data-valign=bottom]:before {
+			border-top-color: transparent;
+			border-bottom-color: rgba(255, 255, 255, 0.95);
+		}
+
+		.kite[data-valign=bottom]:after {
+			margin-bottom: -7px;
+			border-top-color: transparent;
+			border-bottom-color: rgba(0, 0, 0, 0.2);
+		}

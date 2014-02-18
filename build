@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#Requires: Node module cleancss https://github.com/GoalSmashers/clean-css
+cat css/kite.css css/kite.aligns.css css/kite.dark.css | cleancss -o css/kite.min.css
